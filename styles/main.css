@@ -1,0 +1,200 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #fbfbfb;
+    color: #444;
+    font-family: Domine, serif;
+    font-size: 1rem;
+}
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.limiter {
+    margin: auto;
+    max-width: 75rem;
+    padding: 0 2rem;
+}
+
+.site-name {
+    margin: 1rem 0 .5rem 0;
+    text-align: center;
+}
+.site-name a {
+    color: #000;
+    display: block;
+    text-decoration: none;
+}
+.site-name a .site-logo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 10rem;
+    margin: 0 auto .5rem auto;
+    width: 10rem;
+}
+.site-social {
+    font-size: 0;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+.site-social li {
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 .25rem;
+}
+.site-social .social {
+    background-color: #bdc3c7;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    box-shadow: .03125rem .03125rem .25rem 0 rgba(0, 0, 0, .65);
+    display: block;
+    height: 2.5rem;
+    overflow: hidden;
+    text-indent: -9999rem;
+    transition: background-color .3s ease-out;
+    width: 2.5rem;
+}
+.site-social .social:hover {
+    transition: background-color .03s ease-in;
+}
+.site-social .social-facebook {
+    background-image: url('../images/icon-facebook.svg');
+}
+.site-social .social-facebook:hover {
+    background-color: #3b5998;
+}
+.site-social .social-twitter {
+    background-image: url('../images/icon-twitter.svg');
+}
+.site-social .social-twitter:hover {
+    background-color: #1da1f2;
+}
+.site-social .social-instagram {
+    background-image: url('../images/icon-instagram.svg');
+}
+.site-social .social-instagram:hover {
+    background-color: #833ab4;
+}
+.site-social .social-strava {
+    background-image: url('../images/icon-strava.svg');
+}
+.site-social .social-strava:hover {
+    background-color: #fc4c02;
+}
+.site-social .social-github {
+    background-image: url('../images/icon-github.svg');
+}
+.site-social .social-github:hover {
+    background-color: #bd2c00;
+}
+.site-social .social-wordpress-org {
+    background-image: url('../images/icon-wordpress.org.svg');
+}
+.site-social .social-wordpress-org:hover {
+    background-color: #2e4453;
+}
+.site-description {
+    color: #95a5a6;
+    font-size: 1.25rem;
+    font-style: italic;
+    margin-top: 1rem;
+    text-align: center;
+}
+@media only screen and (min-width: 48rem) {
+    .site-brand {
+        bottom: 0;
+        left: 0;
+        pointer-events: none;
+        position: static;
+        right: 0;
+        top: 0;
+    }
+    .site-brand .limiter {
+        position: relative;
+    }
+    .site-header {
+        pointer-events: auto;
+        position: absolute;
+        right: 2rem;
+        top: 0;
+        width: 18.75rem;
+    }
+}
+@media only screen and (min-width: 48rem) and (min-height: 34rem) {
+    .site-brand {
+        position: fixed;
+    }
+}
+
+.site-navigation {
+    margin-bottom: 2rem;
+}
+.site-navigation .nav-bar {
+    border-bottom: solid .125rem #ecf0f1;
+    padding: 3rem 0 1rem 0;
+}
+@media only screen and (min-width: 48rem) {
+    .site-navigation .nav-bar {
+        margin-right: 20.75rem;
+    }
+}
+
+.site-body {
+    padding-bottom: 3rem;
+}
+.site-body .site-content {
+    font-size: 1.25rem;
+    line-height: 1.618033989;
+}
+@media only screen and (min-width: 48rem) {
+    .site-body .site-content {
+        margin-right: 20.75rem;
+    }
+}
+
+.site-footer {}
+.site-footer .copyright {
+    border-top: solid .125rem #ecf0f1;
+    font-size: .75rem;
+    padding: 1rem 0 3rem 0;
+}
+@media only screen and (min-width: 48rem) {
+    .site-footer .copyright {
+        margin: 0 20.75rem 0 0;
+    }
+}
+@media only screen and (min-width: 48rem) and (min-height: 38rem) {
+    .site-footer {
+        bottom: 0;
+        left: 0;
+        pointer-events: none;
+        position: fixed;
+        right: 0;
+    }
+    .site-footer .limiter {
+        position: relative;
+    }
+    .site-footer .copyright {
+        border-top: 0;
+        bottom: 0;
+        margin: 0;
+        padding: 0 0 1rem 0;
+        pointer-events: auto;
+        position: absolute;
+        right: 2rem;
+        text-align: center;
+        width: 18.75rem;
+    }
+}
