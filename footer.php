@@ -5,7 +5,7 @@
     <div class="limiter">
         <div class="copyright">
             <!-- TODO: add from option and current year logic -->
-            &copy; Copyright 2017 <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a> All rights reserved.
+            &copy; 2017 <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a> All Rights Reserved.
         </div>
     </div>
 </footer>

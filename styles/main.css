@@ -22,8 +22,10 @@ h4 {
 }
 
 .site-name {
+    font-size: 1.25rem;
     margin: 1rem 0 .5rem 0;
     text-align: center;
+    text-transform: uppercase;
 }
 .site-name a {
     color: #000;
@@ -37,9 +39,9 @@ h4 {
     border-radius: 50%;
     content: "";
     display: block;
-    height: 10rem;
+    height: 7.5rem;
     margin: 0 auto .5rem auto;
-    width: 10rem;
+    width: 7.5rem;
 }
 .site-social {
     font-size: 0;
@@ -58,7 +60,6 @@ h4 {
     background-repeat: no-repeat;
     background-size: contain;
     border-radius: 50%;
-    box-shadow: .03125rem .03125rem .25rem 0 rgba(0, 0, 0, .65);
     display: block;
     height: 2.5rem;
     overflow: hidden;
@@ -107,7 +108,7 @@ h4 {
 }
 .site-description {
     color: #95a5a6;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-style: italic;
     margin-top: 1rem;
     text-align: center;
@@ -167,8 +168,13 @@ h4 {
 .site-footer {}
 .site-footer .copyright {
     border-top: solid .125rem #ecf0f1;
+    color: #666;
     font-size: .75rem;
     padding: 1rem 0 3rem 0;
+}
+.site-footer .copyright a {
+    color: inherit;
+    text-decoration: none;
 }
 @media only screen and (min-width: 48rem) {
     .site-footer .copyright {
