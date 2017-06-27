@@ -25,6 +25,10 @@ class DevinTheme {
         return $a->url();
     }
 
+    static function on_after_setup_theme() {
+        add_theme_support('title-tag');
+    }
+
     static function on_wp_enqueue_scripts() {
         wp_enqueue_style('dvn-boilerplate', self::get_url('/styles/boilerplate.css'), [], self::get_ss_version());
         wp_enqueue_style('dvn-google-fonts', 'https://fonts.googleapis.com/css?family=Domine|Open+Sans');
@@ -38,7 +42,12 @@ class DevinTheme {
     }
 
     static function initialize() {
+        add_action('after_setup_theme', [__CLASS__, 'on_after_setup_theme',]);
         add_action('wp_enqueue_scripts', [__CLASS__, 'on_wp_enqueue_scripts',]);
+
+        if (!function_exists('_wp_render_title_tag')) {
+            CompatibilityPre4P1::initialize();
+        }
     }
 
 }
