@@ -52,7 +52,7 @@ class DevinTheme {
         add_action('after_setup_theme', [__CLASS__, 'on_after_setup_theme',]);
         add_action('wp_enqueue_scripts', [__CLASS__, 'on_wp_enqueue_scripts',]);
 
-        add_filter('the_content_more_link', 'filter_the_content_more_link');
+        add_filter('the_content_more_link', [__CLASS__, 'filter_the_content_more_link',]);
 
         if (!function_exists('_wp_render_title_tag')) {
             CompatibilityPre4P1::initialize();
