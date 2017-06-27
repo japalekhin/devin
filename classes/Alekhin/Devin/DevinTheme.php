@@ -43,9 +43,16 @@ class DevinTheme {
         wp_enqueue_script('dvn-main', self::get_url('/scripts/main.js'), ['dvn-jquery', 'dvn-plugins',], self::get_ss_version(), TRUE);
     }
 
+    static function filter_the_content_more_link($link) {
+        $link = preg_replace('|#more-[0-9]+|', '', $link);
+        return $link;
+    }
+
     static function initialize() {
         add_action('after_setup_theme', [__CLASS__, 'on_after_setup_theme',]);
         add_action('wp_enqueue_scripts', [__CLASS__, 'on_wp_enqueue_scripts',]);
+
+        add_filter('the_content_more_link', 'filter_the_content_more_link');
 
         if (!function_exists('_wp_render_title_tag')) {
             CompatibilityPre4P1::initialize();
