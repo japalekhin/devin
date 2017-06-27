@@ -19,7 +19,7 @@
     <?php endwhile; ?>
 <?php else: ?>
     <article class="article article-empty">
-        <h1 class="article-title">Nothing posted yet.</h1>
+        <h2 class="article-title">Nothing posted yet.</h2>
     </article>
 <?php endif; ?>
 
