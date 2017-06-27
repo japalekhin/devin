@@ -122,6 +122,9 @@ h4 {
         right: 0;
         top: 0;
     }
+    .admin-bar .site-brand {
+        top: 32px;
+    }
     .site-brand .limiter {
         position: relative;
     }
