@@ -148,6 +148,7 @@ h4 {
 .site-navigation .nav-bar {
     border-bottom: solid .125rem #ecf0f1;
     padding-top: 2rem;
+    text-align: center;
 }
 .site-navigation .nav-bar ul {
     font-size: 0;
@@ -173,6 +174,7 @@ h4 {
 @media only screen and (min-width: 48rem) {
     .site-navigation .nav-bar {
         margin-right: 20.75rem;
+        text-align: left;
     }
 }
 
