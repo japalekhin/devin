@@ -40,7 +40,7 @@ use Alekhin\Devin\DevinTheme;
         <nav class="site-navigation">
             <div class="limiter">
                 <div class="nav-bar">
-                    navigation
+                    <?php wp_nav_menu(['theme_location' => 'primary', 'depth' => 1,]); ?>
                 </div>
             </div>
         </nav>

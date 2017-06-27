@@ -27,6 +27,8 @@ class DevinTheme {
 
     static function on_after_setup_theme() {
         add_theme_support('title-tag');
+
+        register_nav_menu('primary', __('Primary Menu', 'devin'));
     }
 
     static function on_wp_enqueue_scripts() {

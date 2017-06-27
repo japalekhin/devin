@@ -147,7 +147,28 @@ h4 {
 }
 .site-navigation .nav-bar {
     border-bottom: solid .125rem #ecf0f1;
-    padding: 3rem 0 1rem 0;
+    padding-top: 2rem;
+}
+.site-navigation .nav-bar ul {
+    font-size: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.site-navigation .nav-bar ul li {
+    display: inline-block;
+    font-size: 1rem;
+}
+.site-navigation .nav-bar ul li a {
+    color: inherit;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    padding: 1rem;
+    text-decoration: none;
+}
+.site-navigation .nav-bar ul li.current-menu-item a {
+    background-color: #ecf0f1;
+    color: #000;
 }
 @media only screen and (min-width: 48rem) {
     .site-navigation .nav-bar {
