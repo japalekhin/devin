@@ -180,11 +180,11 @@ h4 {
     padding-bottom: 3rem;
 }
 .site-body .site-content {
-    font-size: 1.25rem;
     line-height: 1.618033989;
 }
 @media only screen and (min-width: 48rem) {
     .site-body .site-content {
+        font-size: 1.25rem;
         margin-right: 20.75rem;
     }
 }
@@ -242,6 +242,7 @@ h4 {
     color: #666;
     font-size: .75rem;
     padding: 1rem 0 3rem 0;
+    text-align: center;
 }
 .site-footer .copyright a {
     color: inherit;
@@ -253,6 +254,7 @@ h4 {
 @media only screen and (min-width: 48rem) {
     .site-footer .copyright {
         margin: 0 20.75rem 0 0;
+        text-align: left;
     }
 }
 @media only screen and (min-width: 48rem) and (min-height: 38rem) {
