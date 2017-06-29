@@ -25,8 +25,23 @@ class DevinTheme {
         return $a->url();
     }
 
+    static function get_post_thumbnail_source($post_id) {
+        if (($sources = wp_get_attachment_image_src(get_post_thumbnail_id($post_id))) === FALSE) {
+            return '';
+        }
+        if (!is_array($sources)) {
+            return '';
+        }
+        if (count($sources) < 1) {
+            return '';
+        }
+        return trim($sources[0]);
+    }
+
     static function on_after_setup_theme() {
         add_theme_support('title-tag');
+        add_theme_support('post-thumbnails');
+        set_post_thumbnail_size(756, 467, TRUE);
 
         register_nav_menu('primary', __('Primary Menu', 'devin'));
     }
@@ -43,16 +58,15 @@ class DevinTheme {
         wp_enqueue_script('dvn-main', self::get_url('/scripts/main.js'), ['dvn-jquery', 'dvn-plugins',], self::get_ss_version(), TRUE);
     }
 
-    static function filter_the_content_more_link($link) {
-        $link = preg_replace('|#more-[0-9]+|', '', $link);
-        return $link;
+    static function filter_excerpt_more($more) {
+        return '&hellip;';
     }
 
     static function initialize() {
         add_action('after_setup_theme', [__CLASS__, 'on_after_setup_theme',]);
         add_action('wp_enqueue_scripts', [__CLASS__, 'on_wp_enqueue_scripts',]);
 
-        add_filter('the_content_more_link', [__CLASS__, 'filter_the_content_more_link',]);
+        add_filter('excerpt_more', [__CLASS__, 'filter_excerpt_more',]);
 
         if (!function_exists('_wp_render_title_tag')) {
             CompatibilityPre4P1::initialize();

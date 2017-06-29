@@ -143,7 +143,7 @@ h4 {
         position: absolute;
         right: 2rem;
         top: 0;
-        width: 18.75rem;
+        width: 18rem;
     }
 }
 @media only screen and (min-width: 48rem) and (min-height: 34rem) {
@@ -210,6 +210,22 @@ h4 {
     text-decoration: none;
 }
 .article .article-header {}
+.article .article-thumbnail a {
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid .125rem #2c3e50;
+    display: block;
+    font-size: 0;
+    overflow: hidden;
+    text-indent: -99999rem;
+}
+.article .article-thumbnail a:after {
+    content: "";
+    display: block;
+    padding-top: 61.8033989%;
+}
 .article .article-title {
     margin-bottom: 0;
 }
@@ -305,6 +321,6 @@ h4 {
         position: absolute;
         right: 2rem;
         text-align: center;
-        width: 18.75rem;
+        width: 18rem;
     }
 }

@@ -3,7 +3,7 @@
 <?php the_post(); ?>
 <article class="article">
     <header class="article-header">
-        <h2 class="article-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+        <h1 class="article-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
         <p class="article-meta">
             <?php if (comments_open()): ?>
                 <span class="comments-link"><?php comments_popup_link(__('Comment', 'devin'), __('1 Comment', 'devin'), __('% Comments', 'devin')); ?></span>
