@@ -156,8 +156,8 @@ h4 {
     margin-bottom: 2rem;
 }
 .site-navigation .nav-bar {
-    border-bottom: solid .125rem #c0392b;
-    padding-top: 2rem;
+    background-color: #c0392b;
+    margin: 2rem -1rem 0 -1rem;
     text-align: center;
 }
 .site-navigation .nav-bar ul {
@@ -171,24 +171,29 @@ h4 {
     font-size: 1rem;
 }
 .site-navigation .nav-bar ul li a {
-    color: inherit;
+    color: #fff;
     display: block;
     font-family: 'Open Sans', sans-serif;
-    padding: 1rem;
+    padding: .75rem 1rem;
     text-decoration: none;
 }
-.site-navigation .nav-bar ul li:hover a {
-    background-color: #e74c3c;
-    color: #fff;
-}
+.site-navigation .nav-bar ul li:hover a,
 .site-navigation .nav-bar ul li.current-menu-item a {
-    background-color: #c0392b;
+    background-color: #e74c3c;
     color: #fff;
 }
 @media only screen and (min-width: 48rem) {
     .site-navigation .nav-bar {
-        margin-right: 22.75rem;
+        background-color: transparent;
+        border-bottom: solid .125rem #c0392b;
+        margin: 2rem 22.75rem 0 0;
         text-align: left;
+    }
+    .site-navigation .nav-bar ul li a {
+        color: inherit;
+    }
+    .site-navigation .nav-bar ul li.current-menu-item a {
+        background-color: #c0392b;
     }
 }
 
