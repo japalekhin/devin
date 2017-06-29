@@ -219,7 +219,6 @@ h4 {
     display: block;
     font-size: 0;
     overflow: hidden;
-    text-indent: -99999rem;
 }
 .article .article-thumbnail a:after {
     content: "";

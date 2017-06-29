@@ -41,7 +41,7 @@ class DevinTheme {
     static function on_after_setup_theme() {
         add_theme_support('title-tag');
         add_theme_support('post-thumbnails');
-        set_post_thumbnail_size(756, 467, TRUE);
+        set_post_thumbnail_size(756, 468, TRUE);
 
         register_nav_menu('primary', __('Primary Menu', 'devin'));
     }
