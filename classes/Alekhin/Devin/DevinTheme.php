@@ -26,7 +26,7 @@ class DevinTheme {
     }
 
     static function get_post_thumbnail_source($post_id) {
-        if (($sources = wp_get_attachment_image_src(get_post_thumbnail_id($post_id))) === FALSE) {
+        if (($sources = wp_get_attachment_image_src(get_post_thumbnail_id($post_id), 'post-thumbnail')) === FALSE) {
             return '';
         }
         if (!is_array($sources)) {
