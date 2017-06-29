@@ -26,14 +26,19 @@ use Alekhin\Devin\DevinTheme;
                         </a>
                     </h1>
                     <ul class="site-social">
-                        <li><a href="https://www.facebook.com/japalekhin" target="_blank" class="social social-facebook">Facebook</a></li>
-                        <li><a href="https://twitter.com/japalekhin" target="_blank" class="social social-twitter">Twitter</a></li>
-                        <li><a href="https://www.instagram.com/japalekhin/" target="_blank" class="social social-instagram">Instagram</a></li>
-                        <li><a href="https://www.strava.com/athletes/japalekhin" target="_blank" class="social social-strava">Strava</a></li>
-                        <li><a href="https://github.com/japalekhin" target="_blank" class="social social-github">GitHub</a></li>
-                        <li><a href="https://profiles.wordpress.org/japalekhin" target="_blank" class="social social-wordpress-org">WordPress.org</a></li>
+                        <li><a href="https://www.facebook.com/japalekhin" target="_blank" title="Facebook" class="social social-facebook">Facebook</a></li>
+                        <li><a href="https://twitter.com/japalekhin" target="_blank" title="Twitter" class="social social-twitter">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/japalekhin/" target="_blank" title="Instagram" class="social social-instagram">Instagram</a></li>
+                        <li><a href="https://www.strava.com/athletes/japalekhin" target="_blank" title="Strava" class="social social-strava">Strava</a></li>
+                        <li><a href="https://github.com/japalekhin" target="_blank" title="GitHub" class="social social-github">GitHub</a></li>
+                        <li><a href="https://profiles.wordpress.org/japalekhin" target="_blank" title="GitHub" class="social social-wordpress-org">WordPress.org</a></li>
                     </ul>
                     <p class="site-description"><?php bloginfo('description'); ?></p>
+                    <p class="site-support">
+                        <a href="https://alekhin.llemos.com/support" class="support-button support-button-primary">Support my Projects</a>
+                        <a href="https://www.patreon.com/japalekhin" class="support-button support-button-patreon" target="_blank">Patreon</a>
+                        <a href="https://flattr.com/submit/auto?fid=pd2l5k&url=https%3A%2F%2Falekhin.llemos.com%2F" class="support-button support-button-flattr" target="_blank">Flattr</a>
+                    </p>
                 </header>
             </div>
         </header>

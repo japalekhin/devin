@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define(__NAMESPACE__ . '\ss_version', '1.0.0.201706291307' . (WP_DEBUG ? '.' . time() : ''));
+define(__NAMESPACE__ . '\ss_version', '1.0.0.201706291335' . (WP_DEBUG ? '.' . time() : ''));
 define(__NAMESPACE__ . '\dir', get_stylesheet_directory());
 define(__NAMESPACE__ . '\url', get_stylesheet_directory_uri());
 
