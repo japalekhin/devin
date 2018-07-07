@@ -22,7 +22,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('ss_version', '1.0.0.201807071935' . (WP_DEBUG ? '.' . time() : ''));
+define('ss_version', '1.0.0.201807071949' . (WP_DEBUG ? '.' . time() : ''));
 
 class DevinTheme {
 
