@@ -110,37 +110,37 @@ h4 {
     transition: background-color .03s ease-in;
 }
 .site-social .social-facebook {
-    background-image: url('../images/icon-facebook.svg');
+    background-image: url('../img/icon-facebook.svg');
 }
 .site-social .social-facebook:hover {
     /*background-color: #3b5998;*/
 }
 .site-social .social-twitter {
-    background-image: url('../images/icon-twitter.svg');
+    background-image: url('../img/icon-twitter.svg');
 }
 .site-social .social-twitter:hover {
     /*background-color: #1da1f2;*/
 }
 .site-social .social-instagram {
-    background-image: url('../images/icon-instagram.svg');
+    background-image: url('../img/icon-instagram.svg');
 }
 .site-social .social-instagram:hover {
     /*background-color: #833ab4;*/
 }
 .site-social .social-strava {
-    background-image: url('../images/icon-strava.svg');
+    background-image: url('../img/icon-strava.svg');
 }
 .site-social .social-strava:hover {
     /*background-color: #fc4c02;*/
 }
 .site-social .social-github {
-    background-image: url('../images/icon-github.svg');
+    background-image: url('../img/icon-github.svg');
 }
 .site-social .social-github:hover {
     /*background-color: #bd2c00;*/
 }
 .site-social .social-wordpress-org {
-    background-image: url('../images/icon-wordpress.org.svg');
+    background-image: url('../img/icon-wordpress.org.svg');
 }
 .site-social .social-wordpress-org:hover {
     /*background-color: #2e4453;*/
