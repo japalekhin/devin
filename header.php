@@ -19,26 +19,24 @@ use Alekhin\Devin\DevinTheme;
         <header class="site-brand">
             <div class="limiter">
                 <header class="site-header">
-                    <h1 class="site-name">
-                        <a href="<?php bloginfo('url'); ?>">
-                            <span class="site-logo" style="background-image: url('<?php echo DevinTheme::get_admin_gravatar(); ?>');"></span>
-                            <?php bloginfo('name'); ?>
-                        </a>
-                    </h1>
-                    <ul class="site-social">
-                        <li><a href="https://www.facebook.com/japalekhin" target="_blank" title="Facebook" class="social social-facebook">Facebook</a></li>
-                        <li><a href="https://twitter.com/japalekhin" target="_blank" title="Twitter" class="social social-twitter">Twitter</a></li>
-                        <li><a href="https://www.instagram.com/japalekhin/" target="_blank" title="Instagram" class="social social-instagram">Instagram</a></li>
-                        <li><a href="https://www.strava.com/athletes/japalekhin" target="_blank" title="Strava" class="social social-strava">Strava</a></li>
-                        <li><a href="https://github.com/japalekhin" target="_blank" title="GitHub" class="social social-github">GitHub</a></li>
-                        <li><a href="https://profiles.wordpress.org/japalekhin" target="_blank" title="GitHub" class="social social-wordpress-org">WordPress.org</a></li>
-                    </ul>
-                    <p class="site-description"><?php bloginfo('description'); ?></p>
-                    <p class="site-support">
-                        <a href="https://alekhin.llemos.com/support" class="support-button support-button-primary">Support my Projects</a>
-                        <a href="https://www.patreon.com/japalekhin" class="support-button support-button-patreon" target="_blank">Patreon</a>
-                        <a href="https://flattr.com/submit/auto?fid=pd2l5k&url=https%3A%2F%2Falekhin.llemos.com%2F" class="support-button support-button-flattr" target="_blank">Flattr</a>
-                    </p>
+                    <span class="site-identity">
+                        <div class="site-logo" style="background-image: url('<?php echo DevinTheme::get_admin_gravatar(); ?>');"></div>
+                        <div class="site-info">
+                            <h1 class="site-title">
+                                <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
+                            </h1>
+                            <p class="site-description"><?php bloginfo('description'); ?></p>
+                            <ul class="site-social">
+                                <li><a href="https://github.com/japalekhin" target="_blank" title="GitHub" class="social social-github">GitHub</a></li>
+                                <li><a href="https://profiles.wordpress.org/japalekhin" target="_blank" title="GitHub" class="social social-wordpress-org">WordPress.org</a></li>
+                                <li><a href="https://www.strava.com/athletes/japalekhin" target="_blank" title="Strava" class="social social-strava">Strava</a></li>
+                                <li><a href="https://www.linkedin.com/in/japa-alekhin-llemos-400641167/" target="_blank" class="social social-linked-in">LinkedIn</a>
+                                <li><a href="https://www.facebook.com/japalekhin" target="_blank" title="Facebook" class="social social-facebook">Facebook</a></li>
+                                <li><a href="https://twitter.com/japalekhin" target="_blank" title="Twitter" class="social social-twitter">Twitter</a></li>
+                                <li><a href="https://www.instagram.com/japalekhin/" target="_blank" title="Instagram" class="social social-instagram">Instagram</a></li>
+                            </ul>
+                        </div>
+                    </span>
                 </header>
             </div>
         </header>

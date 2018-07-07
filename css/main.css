@@ -7,6 +7,7 @@ body {
     color: #2c3e50;
     font-family: Domine, serif;
     font-size: 1rem;
+    min-width: 20.625rem;
 }
 h1,
 h2,
@@ -21,36 +22,92 @@ h4 {
     padding: 0 1rem;
 }
 
-.site-name {
-    font-size: 1.5rem;
-    margin: 1rem 0;
-    text-align: center;
+.site-brand .limiter {
+    padding-left: 0;
 }
-.site-name a {
-    color: #2c3e50;
-    display: block;
-    text-decoration: none;
-    transition: color .3s ease-out;
+.site-header .site-identity {
+    display: flex;
+    flex-direction: row;
 }
-.site-name:hover a {
-    transition: color .03s ease-in;
-}
-.site-name a .site-logo {
+.site-header .site-identity .site-logo {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: solid .1875rem #fbfbfb;
-    border-radius: 50%;
-    content: "";
-    display: block;
-    height: 7.5rem;
-    margin: 0 auto .5rem auto;
-    transition: border-color .7s ease-out;
-    width: 7.5rem;
+    border-radius: 0 0 9999999rem 0;
+    height: 5rem;
+    margin-right: 1rem;
+    width: 5rem;
 }
-.site-name:hover a .site-logo {
-    border-color: #e74c3c;
-    transition: border-color .1s ease-in;
+.site-header .site-identity .site-info {
+    flex: 1 1 auto;
+}
+.site-header .site-identity .site-info h1.site-title {
+    font-size: 1.25rem;
+    margin: 1rem 0 0 0;
+}
+.site-header .site-identity .site-info h1.site-title a {
+    color: #2c3e50;
+    text-decoration: none;
+}
+.site-header .site-identity .site-description {
+    color: #34495e;
+    font-size: .875rem;
+    font-style: italic;
+    margin: 0 0 1.25rem 0;
+}
+.site-header .site-identity .site-social {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 0;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-left: -5rem;
+    padding: 0;
+    text-align: center;
+}
+.site-header .site-identity .site-social li {
+    display: inline-block;
+    font-size: 1rem;
+}
+.site-header .site-identity .site-social .social {
+    background-color: #2c3e50;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    display: block;
+    height: 2.5rem;
+    overflow: hidden;
+    text-indent: -9999rem;
+    transition: background-color .3s ease-out;
+    width: 2.5rem;
+}
+.site-header .site-identity .site-social .social:hover {
+    background-color: #e74c3c;
+    transition: background-color .03s ease-in;
+}
+.site-header .site-identity .site-social .social-github {
+    background-image: url('../img/icon-github.svg');
+}
+.site-header .site-identity .site-social .social-wordpress-org {
+    background-image: url('../img/icon-wordpress.org.svg');
+}
+.site-header .site-identity .site-social .social-strava {
+    background-image: url('../img/icon-strava.svg');
+}
+.site-header .site-identity .site-social .social-linked-in {
+    background-image: url('../img/icon-linked-in.svg');
+}
+.site-header .site-identity .site-social .social-facebook {
+    background-image: url('../img/icon-facebook.svg');
+}
+.site-header .site-identity .site-social .social-twitter {
+    background-image: url('../img/icon-twitter.svg');
+}
+.site-header .site-identity .site-social .social-instagram {
+    background-image: url('../img/icon-instagram.svg');
 }
 @media only screen and (min-width: 48rem) {
     .site-brand {
@@ -74,120 +131,33 @@ h4 {
         top: 0;
         width: 18rem;
     }
+    .site-header .site-identity {
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+    .site-header .site-identity .site-logo {
+        border-radius: 9999999rem;
+        height: 10rem;
+        margin: 0 auto;
+        width: 10rem;
+    }
+    .site-header .site-identity .site-info h1.site-title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .site-header .site-identity .site-description {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .site-header .site-identity .site-social {
+        justify-content: space-between;
+        margin: 0;
+    }
 }
 @media only screen and (min-width: 48rem) and (min-height: 34rem) {
     .site-brand {
         position: fixed;
     }
-}
-
-.site-social {
-    font-size: 0;
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-}
-.site-social li {
-    display: inline-block;
-    font-size: 1rem;
-    margin: 0 .25rem;
-}
-.site-social .social {
-    background-color: #2c3e50;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-radius: 50%;
-    display: block;
-    height: 2.5rem;
-    overflow: hidden;
-    text-indent: -9999rem;
-    transition: background-color .3s ease-out;
-    width: 2.5rem;
-}
-.site-social .social:hover {
-    background-color: #e74c3c;
-    transition: background-color .03s ease-in;
-}
-.site-social .social-facebook {
-    background-image: url('../img/icon-facebook.svg');
-}
-.site-social .social-facebook:hover {
-    /*background-color: #3b5998;*/
-}
-.site-social .social-twitter {
-    background-image: url('../img/icon-twitter.svg');
-}
-.site-social .social-twitter:hover {
-    /*background-color: #1da1f2;*/
-}
-.site-social .social-instagram {
-    background-image: url('../img/icon-instagram.svg');
-}
-.site-social .social-instagram:hover {
-    /*background-color: #833ab4;*/
-}
-.site-social .social-strava {
-    background-image: url('../img/icon-strava.svg');
-}
-.site-social .social-strava:hover {
-    /*background-color: #fc4c02;*/
-}
-.site-social .social-github {
-    background-image: url('../img/icon-github.svg');
-}
-.site-social .social-github:hover {
-    /*background-color: #bd2c00;*/
-}
-.site-social .social-wordpress-org {
-    background-image: url('../img/icon-wordpress.org.svg');
-}
-.site-social .social-wordpress-org:hover {
-    /*background-color: #2e4453;*/
-}
-
-.site-description {
-    color: #34495e;
-    font-size: 1.125rem;
-    font-style: italic;
-    margin-top: 1rem;
-    text-align: center;
-}
-
-.site-support {
-    text-align: center;
-}
-.site-support .support-button {
-    box-sizing: border-box;
-    display: inline-block;
-    color: #fff;
-    min-width: 6rem;
-    padding: .75rem 1rem;
-    text-decoration: none;
-}
-.site-support .support-button-primary {
-    background-color: #2c3e50;
-    display: block;
-    font-weight: bold;
-    margin: .5rem auto;
-    max-width: 16rem;
-    padding: 1rem 2rem;
-    text-align: center;
-}
-.site-support .support-button-primary:hover {
-    background-color: #34495e;
-}
-.site-support .support-button-patreon {
-    background-color: #c0392b;
-}
-.site-support .support-button-patreon:hover {
-    background-color: #e74c3c;
-}
-.site-support .support-button-flattr {
-    background-color: #27ae60;
-}
-.site-support .support-button-flattr:hover {
-    background-color: #2ecc71;
 }
 
 .site-navigation {
