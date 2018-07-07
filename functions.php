@@ -13,7 +13,6 @@ use function get_post_thumbnail_id;
 use function get_stylesheet_directory_uri;
 use function register_nav_menu;
 use function set_post_thumbnail_size;
-use function wp_enqueue_script;
 use function wp_enqueue_style;
 use function wp_get_attachment_image_src;
 use function wp_title;
@@ -57,9 +56,6 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('dvn-boilerplate', get_stylesheet_directory_uri() . '/css/boilerplate.css', [], ss_version);
     wp_enqueue_style('dvn-google-fonts', 'https://fonts.googleapis.com/css?family=Domine|Open+Sans');
     wp_enqueue_style('dvn-main', get_stylesheet_directory_uri() . '/css/main.css', [], ss_version);
-    wp_enqueue_script('dvn-jquery', 'https://code.jquery.com/jquery-3.2.1.min.js', [], ss_version, true);
-    wp_enqueue_script('dvn-plugins', get_stylesheet_directory_uri() . '/js/plugins.js', ['dvn-jquery',], ss_version, true);
-    wp_enqueue_script('dvn-main', get_stylesheet_directory_uri() . '/js/main.js', ['dvn-jquery', 'dvn-plugins',], ss_version, true);
 });
 add_filter('excerpt_more', function ($more) {
     return '&hellip;';
