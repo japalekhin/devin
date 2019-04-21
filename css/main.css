@@ -24,6 +24,7 @@ h4 {
 
 .site-brand .limiter {
     padding-left: 0;
+	padding-right: 0;
 }
 .site-header .site-identity {
     display: flex;
@@ -34,25 +35,27 @@ h4 {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 0 0 9999999rem 0;
-    flex: 0 0 5rem;
-    height: 5rem;
+	display: block;
+    flex: 0 0 auto;
+    height: 4rem;
     margin-right: 1rem;
-    width: 5rem;
+    width: 4rem;
 }
 .site-header .site-identity .site-info {
     flex: 1 1 auto;
 }
 .site-header .site-identity .site-info h1.site-title {
     font-size: 1.25rem;
-    margin: 1rem 0 0 0;
+    margin: .5rem 0 0 0;
 }
 .site-header .site-identity .site-info h1.site-title a {
     color: #2c3e50;
+    font-family: Domine, serif;
     text-decoration: none;
 }
 .site-header .site-identity .site-description {
     color: #34495e;
-    font-size: .875rem;
+    font-size: .75rem;
     font-style: italic;
     margin: 0 0 1.25rem 0;
 }
@@ -62,7 +65,7 @@ h4 {
     flex-direction: row;
     flex-wrap: wrap;
     font-size: 0;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style-type: none;
     margin-left: -5rem;
     padding: 0;
@@ -72,6 +75,10 @@ h4 {
     display: inline-block;
     font-size: 1rem;
 }
+.site-header .site-identity .site-social .site-social-mainstream {
+	display: flex;
+	flex-direction: row;
+}
 .site-header .site-identity .site-social .social {
     background-color: #2c3e50;
     background-position: center;
@@ -80,6 +87,7 @@ h4 {
     border-radius: 50%;
     display: block;
     height: 2.5rem;
+	margin: auto .25rem;
     overflow: hidden;
     text-indent: -9999rem;
     transition: background-color .3s ease-out;
@@ -92,6 +100,9 @@ h4 {
 .site-header .site-identity .site-social .social-github {
     background-image: url('../img/icon-github.svg');
 }
+.site-header .site-identity .site-social .social-discord {
+	background-image: url('../img/icon-discord.svg');
+}
 .site-header .site-identity .site-social .social-wordpress-org {
     background-image: url('../img/icon-wordpress.org.svg');
 }
@@ -103,12 +114,43 @@ h4 {
 }
 .site-header .site-identity .site-social .social-facebook {
     background-image: url('../img/icon-facebook.svg');
+/* 	border-radius: 50% 0 0 50%; */
 }
 .site-header .site-identity .site-social .social-twitter {
     background-image: url('../img/icon-twitter.svg');
+/*     border-radius: 0; */
 }
 .site-header .site-identity .site-social .social-instagram {
     background-image: url('../img/icon-instagram.svg');
+/* 	border-radius: 0 50% 50% 0; */
+}
+.site-header .site-identity .patreon {
+    margin-left: -5rem;
+	margin-top: 1rem;
+    padding: 0;
+	text-align: center;
+}
+.site-header .site-identity .patreon img {
+	height: auto;
+	max-width: 100%;
+}
+.site-header .site-identity .support {
+	font-size: .75rem;
+    margin-left: -5rem;
+	margin-top: .5rem;
+	text-align: center;
+}
+.site-header .site-identity .support a {
+	color: #c0392b;
+	text-decoration: none;
+}
+.site-header .site-identity .support a:hover {
+	color: #e74c3c;
+}
+.site-header .google-ads {
+	margin-left: 1rem;
+	margin-top: 1rem;
+	max-height: 50vh;
 }
 @media only screen and (min-width: 48rem) {
     .site-brand {
@@ -128,9 +170,9 @@ h4 {
     .site-header {
         pointer-events: auto;
         position: absolute;
-        right: 2rem;
+        right: 1rem;
         top: 0;
-        width: 18rem;
+        width: 12rem;
     }
     .site-header .site-identity {
         flex-direction: column;
@@ -139,22 +181,31 @@ h4 {
     .site-header .site-identity .site-logo {
         border-radius: 9999999rem;
         flex: 0 0 auto;
-        height: 10rem;
+        height: 7rem;
         margin: 0 auto;
-        width: 10rem;
+        width: 7rem;
     }
     .site-header .site-identity .site-info h1.site-title {
         font-size: 1.5rem;
         text-align: center;
     }
     .site-header .site-identity .site-description {
-        font-size: 1rem;
+        font-size: .875rem;
         text-align: center;
     }
     .site-header .site-identity .site-social {
-        justify-content: space-between;
+        justify-content: center;
         margin: 0;
     }
+	.site-header .site-identity .patreon {
+		margin-left: 0;
+	}
+	.site-header .site-identity .support {
+		margin-left: 0;
+	}
+	.site-header .google-ads {
+		margin-left: 0;
+	}
 }
 @media only screen and (min-width: 48rem) and (min-height: 34rem) {
     .site-brand {
@@ -196,7 +247,7 @@ h4 {
     .site-navigation .nav-bar {
         background-color: transparent;
         border-bottom: solid .125rem #c0392b;
-        margin: 2rem 22.75rem 0 0;
+        margin: 2rem 16rem 0 0;
         text-align: left;
     }
     .site-navigation .nav-bar ul li a {
@@ -215,12 +266,14 @@ h4 {
 }
 @media only screen and (min-width: 48rem) {
     .site-body .site-content {
-        font-size: 1.25rem;
-        margin-right: 22.75rem;
+        /* font-size: 1.25rem; */
+        margin-right: 16rem;
     }
 }
 
-.article {}
+.article {
+	margin-bottom: 1.5rem;
+}
 .article a {
     text-decoration: none;
 }
@@ -241,6 +294,7 @@ h4 {
     padding-top: 56.25%;
 }
 .article .article-title {
+	font-size: 1.125rem;
     margin-bottom: 0;
 }
 .article .article-title a {
@@ -290,6 +344,11 @@ h4 {
 .article .article-footer.article-comments a {
     color: inherit;
 }
+@media only screen and (min-width: 48rem) {
+	.article .article-title {
+		font-size: 2rem;
+	}
+}
 
 .site-footer {}
 .site-footer .copyright {
@@ -335,8 +394,25 @@ h4 {
         position: absolute;
         right: 2rem;
         text-align: center;
-        width: 18rem;
+        width: 12rem;
     }
 }
 
 .article .article-body .swp_social_panel a { color: #fff; }
+
+pre.wp-block-code {
+	background-color: #2d3436;
+	border-radius: .25rem;
+	color: #fff;
+	font-size: 1rem;
+	padding: .5rem .75rem;
+}
+p code {
+	/* background-color: #2d3436; */
+	background-color: #596275;
+	border-radius: .25rem;
+	color: #fff;
+	display: inline-block;
+	font-size: 1rem;
+	padding: 0 .25rem;
+}
